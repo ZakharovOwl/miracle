@@ -1,0 +1,57 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+@import "src/styles/header";
+@import "src/styles/main";
+
+//constants
+$container-max-width-size: 1920px;
+$container-padding-size: 0 80px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container-wrapper{
+  display: flex;
+  width: 100%;
+  max-width: $container-max-width-size;
+  padding: $container-padding-size;
+}
+
+.container-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+a, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@include xs-screen() {
+  $container-padding-size:0 20px;
+  $container-max-width-size: 544px;
+}
+
+@include sm-screen() {
+  container-padding-size:0 40px;
+  $container-max-width-size: 768px;
+}
+
+@include md-screen() {
+  $container-padding-size:0 64px;
+  $container-max-width-size: 992px;
+}
+
+@include lg-screen() {
+  $container-padding-size:0 72px;
+  $container-max-width-size: 1280px;
+}
+
+@include xl-screen() {
+  $container-padding-size:0 80px;
+  $container-max-width-size: 1920px;
+}

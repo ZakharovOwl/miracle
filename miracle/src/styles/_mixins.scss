@@ -1,0 +1,36 @@
+//Media queries
+$xs-screen-width: 540px;
+$sm-screen-width: 768px;
+$md-screen-width: 992px;
+$lg-screen-width: 1280px;
+$xl-screen-width: 1920px;
+
+@mixin xs-screen() {
+  @media screen and (max-width: $xs-screen-width) {
+    @content;
+  }
+}
+
+@mixin sm-screen() {
+  @media screen and (max-width: $sm-screen-width) {
+    @content;
+  }
+}
+
+@mixin md-screen() {
+  @media screen and (max-width: $md-screen-width) {
+    @content;
+  }
+}
+
+@mixin lg-screen() {
+  @media screen and (max-width: $lg-screen-width) {
+    @content;
+  }
+}
+
+@mixin xl-screen() {
+  @media screen and (min-width: $xl-screen-width) {
+    @content;
+  }
+}

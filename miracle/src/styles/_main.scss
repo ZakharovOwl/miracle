@@ -1,0 +1,116 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("assets/back/medium.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content-left {
+  padding-right: 5vw;
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .logo-main {
+    width: 18vh;
+    height: 18vh;
+    min-width: 192px;
+    min-height: 192px;
+    background-image: linear-gradient(81deg, #3a1c587d 15.31%, #fc817242 67.37%), url("assets/logo-main.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+  }
+
+  .logo-title-main {
+    color: #fdbc9d;
+    font-family: $font-logo;
+    font-weight: 400;
+    font-size: 62px;
+    margin-top: 8px;
+    //text-shadow: 6px 4px 3px #09164a;
+    //text-shadow: -4px 4px 20px #ffbea0;
+    text-shadow: -4px 4px 20px #ffbea0d4;
+  }
+
+  .first-main {
+    font-weight: 600;
+    font-size: 64px;
+  }
+}
+
+.main-content-right {
+  padding-left: 5vw;
+  border-left: 3px solid white;
+
+  .select-title {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 84px;
+    color: white;
+    max-width: 668px;
+    margin-bottom: 48px;
+    text-shadow: 6px 4px 20px #18154e;
+  }
+
+  .main-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 214px;
+    height: 48px;
+    background: #11144b2e;
+    border: 1px solid #ffc7ac;
+    border-radius: 10px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #f9dfd2;
+  }
+}
+
+@include xs-screen() {
+  .main-block {
+    background-image: url("assets/back/small.jpg");
+  }
+}
+//
+//@include sm-screen() {
+//
+//}
+//
+//@include md-screen() {
+//
+//}
+//
+@include lg-screen() {
+  .main-block {
+    background-image: url("assets/back/full.jpg");
+  }
+}
+
+//@include xl-screen() {
+//
+//}

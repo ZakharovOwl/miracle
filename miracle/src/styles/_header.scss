@@ -1,0 +1,97 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.header-block {
+  background-color: #e8e5e5;
+
+  .container-wrapper {
+    z-index: 10;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-right: 24px;
+}
+
+.logo-title {
+  font-family: $font-logo;
+  font-weight: 400;
+  font-size: 24px;
+  color: black;
+}
+
+.first {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+//font-family: $font-red;
+//font-family: $font-montserrat;
+//font-family: $font-poppins;
+//font-family: $font-rufina;
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: black;
+  font-family: $font-montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.phone {
+  margin-bottom: 8px;
+}
+
+.mail {
+  margin-bottom: 8px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+}
+
+
+//@include xs-screen() {
+//
+//}
+//
+//@include sm-screen() {
+//
+//}
+//
+//@include md-screen() {
+//
+//}
+//
+//@include lg-screen() {
+//
+//}
+//
+//@include xl-screen() {
+//
+//}
