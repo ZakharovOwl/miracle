@@ -2,6 +2,9 @@
 @import "src/styles/fonts";
 @import "src/styles/header";
 @import "src/styles/main";
+@import "src/styles/services";
+@import "src/styles/why";
+@import "src/styles/form";
 
 //constants
 $container-max-width-size: 1920px;
@@ -14,6 +17,9 @@ $container-padding-size: 0 80px;
 }
 
 .container-wrapper{
+  $container-max-width-size: 1920px;
+  $container-padding-size: 0 80px;
+
   display: flex;
   width: 100%;
   max-width: $container-max-width-size;

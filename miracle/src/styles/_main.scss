@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("assets/back/medium.jpg");
+  background-image: linear-gradient(198.73deg, #00000000 15.31%, #0000008f 52.37%),url("assets/back/medium.jpg");
 
   background-size: cover;
   background-position: center;
@@ -22,6 +22,7 @@
 
 .main-content-left {
   padding-right: 5vw;
+  opacity: 0.9;
 
   .logo-wrapper {
     display: flex;
@@ -35,7 +36,8 @@
     height: 18vh;
     min-width: 192px;
     min-height: 192px;
-    background-image: linear-gradient(81deg, #3a1c587d 15.31%, #fc817242 67.37%), url("assets/logo-main.svg");
+    background-image: linear-gradient(324deg, #3a1c5887 15.31%, #fc817200 67.37%), url("assets/logo-main.svg") ;
+    //background-image: linear-gradient(81deg, #3a1c587d 15.31%, #fc817242 67.37%), url("assets/logo-main.svg");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -50,7 +52,8 @@
     margin-top: 8px;
     //text-shadow: 6px 4px 3px #09164a;
     //text-shadow: -4px 4px 20px #ffbea0;
-    text-shadow: -4px 4px 20px #ffbea0d4;
+    //text-shadow: -4px 4px 20px #ffbea0d4;
+    text-shadow: -4px 4px 20px #b52a2a;
   }
 
   .first-main {
@@ -70,7 +73,8 @@
     color: white;
     max-width: 668px;
     margin-bottom: 48px;
-    text-shadow: 6px 4px 20px #18154e;
+    //text-shadow: 6px 4px 20px #18154e;
+    text-shadow: 6px 4px 20px #97396b;
   }
 
   .main-btn {
@@ -83,12 +87,23 @@
     border: 1px solid #ffc7ac;
     border-radius: 10px;
     cursor: pointer;
+
+    font-family: $font-montserrat;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #f9dfd2;
+
+    &:hover {
+      color: black;
+      background: #fdbc9d;
+      border: 1px solid #fdbc9d;
+    }
   }
+  //.your {
+  //  color: #fdbc9d;
+  //}
 }
 
 @include xs-screen() {
@@ -97,14 +112,35 @@
   }
 }
 //
-//@include sm-screen() {
-//
-//}
-//
-//@include md-screen() {
-//
-//}
-//
+@include sm-screen() {
+  .main-content {
+    flex-direction: column;
+
+    .select-title {
+      text-align: center;
+    }
+  }
+  .main-content-left {
+    margin-top: 5vh;
+    padding-right: 0;
+  }
+}
+
+@include md-screen() {
+  .main-content-right {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .select-title {
+      font-size: 68px;
+    }
+  }
+}
+
 @include lg-screen() {
   .main-block {
     background-image: url("assets/back/full.jpg");

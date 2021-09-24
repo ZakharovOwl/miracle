@@ -1,5 +1,3 @@
-import Header from "./Header";
-
 export default function Main() {
     return (
         <div className="main-block container-block">
@@ -13,7 +11,7 @@ export default function Main() {
                         </div>
                     </div>
                     <div className="main-content-right">
-                        <h2 className="select-title">Создадим сайт для твоих идей</h2>
+                        <h2 className="select-title">Создадим сайт для <span className="your">твоих</span> идей</h2>
                         <button className="main-btn">Оставить заявку</button>
                     </div>
                 </div>

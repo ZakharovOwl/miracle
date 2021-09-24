@@ -1,0 +1,89 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.why-block {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: $grey1;
+  padding: 72px 0;
+  border: 12px solid white;
+  border-top: none;
+  position: relative;
+  min-height: 568px;
+  //min-height: 80vh;
+}
+
+.why-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.why-title-block {
+  width: 50%;
+  margin-bottom: 0;
+  padding: 21px;
+  border: 12px solid white;
+  border-right: none;
+  position: relative;
+  padding-top: 90px;
+  justify-content: flex-start;
+
+  //background-image: url("assets/why/tr1.png");
+  //background-size: cover;
+  //background-position: center;
+  //background-repeat: no-repeat;
+}
+
+.why-content {
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 12px;
+  border: 12px solid white;
+  background-color: white;
+  width: 50%;
+}
+
+.why-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $grey1;
+  padding: 21px;
+  font-family: $font-montserrat;
+  font-weight: 400;
+}
+
+.why-title {
+  font-weight: 500;
+  font-size: 28px;
+  margin-bottom: 8px;
+  z-index: 20;
+  text-align: center;
+}
+
+.title-simple-why {
+  z-index: 20;
+  text-align: center;
+}
+
+.why-text {
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  z-index: 20;
+}
+
+.why-img {
+  position: absolute;
+  bottom: -200px;
+  /* bottom: -30%; */
+  right: 0;
+  height: auto;
+  width: 95%;
+  z-index: 10;
+  transform: rotate(
+                  180deg);
+}

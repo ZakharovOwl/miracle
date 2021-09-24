@@ -1,0 +1,232 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.form-block-wrapper {
+  padding: 72px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: $grey1;
+  //background: linear-gradient(135deg, hsla(300, 3%, 6%, 1) 0%, hsla(247, 100%, 19%, 1) 70%);
+  //
+  //background: -moz-linear-gradient(135deg, hsla(300, 3%, 6%, 1) 0%, hsla(247, 100%, 19%, 1) 70%);
+  //
+  //background: -webkit-linear-gradient(135deg, hsla(300, 3%, 6%, 1) 0%, hsla(247, 100%, 19%, 1) 70%);
+}
+
+.form-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  //background-image: url("assets/service/smile-medium.jpg");
+  //background-size: cover;
+  //background-repeat: repeat;
+  //background-position: center;
+}
+
+.form {
+  background-color: $grey1;
+  padding: 48px;
+  border-radius: 7px;
+  width: 50%;
+  min-width: 320px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  font-family: $font-montserrat;
+  color: #282A32;
+  margin-bottom: 24px;
+}
+
+.label-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.form-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 48px;
+
+  h2,h3 {
+    font-family: $font-montserrat;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 32px;
+    margin-top: 8px;
+  }
+
+  h3 {
+    font-weight: 300;
+    font-size: 28px;
+  }
+}
+
+.err-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color:  #D8402E;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 20px;
+
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.err-star {
+  color:  #D8402E;
+  margin-left: 4px;
+}
+
+.err-icon {
+  display: block;
+  min-width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  background-image: url('assets/form/info.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//textarea
+.textarea {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 11px;
+  height: 126px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282A32;
+
+  &::placeholder {
+    color: #7B7F8E;
+  }
+}
+
+//input
+
+.input {
+  height: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282A32;
+
+  &::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7B7F8E;
+  }
+}
+
+.input-border {
+  border: 0.5px solid #A7ABB8;
+}
+
+
+.input, .textarea {
+  padding: 21px;
+  background: #FFFFFF;
+  border: 0.5px solid #A7ABB8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 10px;
+  outline: 0;
+  outline-offset: 0;
+  border: 0.5px solid #A7ABB8;
+
+  &:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+    border: 0.5px solid #A7ABB8;
+  }
+}
+
+.input-border-error {
+  border: 0.5px solid #D8402E;
+}
+
+//form-btn
+.form-btn {
+  background: #F4D13A;
+  border: 2px solid #F4D13A;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  color: #282A32;
+  padding: 12px 44px;
+  cursor: pointer;
+  width: 214px;
+
+  &:hover {
+    background-color: #F5F6F8;
+  }
+
+  &:active {
+    background-color: #E3E5EC;
+    border: 2px solid #E3E5EC;
+  }
+}
+
+.btn-submitted {
+  background: #36A9B7;
+  border: 2px solid #36A9B7;
+  color: #FFFFFF;
+  //box-sizing: border-box;
+  //border-radius: 4px;
+  //font-weight: bold;
+  //font-size: 14px;
+  //line-height: 24px;
+  //padding: 12px 44px;
+  //cursor: pointer;
+
+  &:hover {
+    color: #282A32;
+  }
+}
+
+.image-wrapper {
+  background-image: url("assets/service/smile-medium.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  width: 50%;
+  height: 638px;
+  margin-left: 5vw;
+}

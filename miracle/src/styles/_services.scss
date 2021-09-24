@@ -1,0 +1,122 @@
+@import "src/styles/mixins";
+@import "src/styles/fonts";
+
+.services-block {
+  display: flex;
+  flex-direction: column;
+  background-color: $grey1;
+  width: 100%;
+  //height: 70vh;
+  padding-top: 72px;
+}
+
+.services-wrapper {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 42px;
+
+  font-family: $font-montserrat;
+  font-weight: 400;
+}
+
+.title-simple {
+  font-weight: 400;
+  font-size: 38px;
+  margin-bottom: 16px;
+}
+
+.title-secondary-simple {
+  font-weight: 300;
+  font-size: 28px;
+}
+
+.services-content {
+  display: grid;
+  grid-column: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 12px;
+  border: 12px solid white;
+  background-color: white;
+}
+
+.services-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50vh;
+  background-color: $grey1;
+  padding: 42px;
+  overflow: hidden;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-montserrat;
+}
+
+.title-card {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.content-card {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.card-img {
+  height: 63%;
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+
+.card-design {
+  background: linear-gradient(45deg, hsla(266, 63%, 26%, 1) 0%, hsla(354, 55%, 63%, 1) 50%, hsla(31, 100%, 74%, 1) 100%);
+  background: -moz-linear-gradient(45deg, hsla(266, 63%, 26%, 1) 0%, hsla(354, 55%, 63%, 1) 50%, hsla(31, 100%, 74%, 1) 100%);
+  background: -webkit-linear-gradient(45deg, hsla(266, 63%, 26%, 1) 0%, hsla(354, 55%, 63%, 1) 50%, hsla(31, 100%, 74%, 1) 100%);
+}
+
+.design-text {
+  text-shadow: -4px 4px 20px #612d6f;
+  color:white;
+}
+
+.card-dev-img {
+  height: auto;
+  width: 100%;
+  bottom: -20%;
+}
+
+.wave-img {
+  max-width: 90%;
+  height: auto;
+  left: 0;
+  bottom: -60px;
+}
+
+.update {
+  left: 0;
+  height: 100%;
+}
+
+//.smile-text {
+//  color: aliceblue;
+//  height: 100%;
+//  justify-content: space-between;
+//  padding: 0;
+//}

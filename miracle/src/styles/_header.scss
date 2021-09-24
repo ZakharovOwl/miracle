@@ -2,11 +2,22 @@
 @import "src/styles/fonts";
 
 .header-block {
-  background-color: #e8e5e5;
+  background-color: #00061cc2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 44px;
+  z-index: 1000;
+}
 
-  .container-wrapper {
-    z-index: 10;
-  }
+.header-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 80px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 .header {
@@ -14,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 20px 0;
+  max-width: 1000px;
 }
 
 .logo-wrapper {
@@ -24,27 +35,42 @@
 }
 
 .logo {
-  width: 64px;
-  height: 64px;
-  margin-right: 24px;
+  width: 24px;
+  height: 44px;
+  margin-right: 8px;
 }
 
 .logo-title {
-  font-family: $font-logo;
+  font-family: $font-montserrat;
+  font-size: 14px;
   font-weight: 400;
-  font-size: 24px;
-  color: black;
-}
-
-.first {
-  font-weight: 600;
-  font-size: 24px;
+  /* color: #a59e9e; */
 }
 
 //font-family: $font-red;
 //font-family: $font-montserrat;
 //font-family: $font-poppins;
 //font-family: $font-rufina;
+
+.menu-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: #d5d5d6;
+}
+
+.menu-item {
+  cursor: pointer;
+  font-family: $font-montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  list-style-type: none;
+
+  &:hover {
+    color:white;
+  }
+}
 
 .contacts {
   display: flex;
@@ -55,6 +81,7 @@
   font-family: $font-montserrat;
   font-size: 14px;
   font-weight: 400;
+  display: none;
 }
 
 .contact-item {
