@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Services from "./components/Services";
 import Why from "./components/Why";
 import Form from "./components/Form";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Services />
         <Why />
         <Form />
+        <Footer />
     </div>
   );
 }
