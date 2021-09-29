@@ -133,11 +133,18 @@ const Form = () => {
         <div className="form-block-wrapper" id="contact">
             <div className="container-wrapper form-wrapper">
                 <div className="form-title">
-                    <h3>Хотите узнать стоимость разработки сайта?</h3>
-                    <h2>Оставить заявку</h2>
+                    <h3>Хотите узнать стоимость</h3>
+                    <h3>разработки сайта?</h3>
+                    {/*<h2>Напишите нам</h2>*/}
                 </div>
                 <div className="form-content-wrapper">
                     <form  className="form" onSubmit={sendEmail}>
+                        <div className="form-title">
+                            {/*<h3>Хотите узнать стоимость</h3>*/}
+                            {/*<h3>разработки сайта?</h3>*/}
+                            <h2>Напишите нам</h2>
+                        </div>
+
                         <label className="form-label name-label">
                             <div className="label-block">
                                 <p className="label-title">Имя<span className="err-star">*</span></p>
