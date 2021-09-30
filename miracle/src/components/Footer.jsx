@@ -2,15 +2,15 @@ export default function Footer() {
     return (
         <div className="footer-block container-block">
             <div className="footer-wrapper">
-                <h2 className="footer-logo-text">Наши контакты</h2>
+                <h2 className="footer-logo-text" id="contact">Наши контакты</h2>
                 <footer className="footer">
                     <div className="footer-item">
-                        <a href="/" className="footer-logo-wrapper logo-wrapper">
+                        <div className="footer-logo-wrapper logo-wrapper">
                             <div className="footer-logo">
                                 <img className="footer-logo-img" src="assets/logo1.svg" alt="tree"/>
                                 <h1 className="footer-logo-title"><span className="first">M</span>iracle</h1>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <ul className="footer-content">
                         <li className="footer-item contact-item phone">

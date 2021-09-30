@@ -1,6 +1,6 @@
 export default function Why() {
     return (
-        <div className="why-block">
+        <div className="why-block" id="why">
             <div className="container-wrapper why-wrapper">
                 <div className="title-block why-title-block">
                     <h2 className="title-simple title-simple-why">Почему следует <span className="select">выбрать</span> нас?</h2>

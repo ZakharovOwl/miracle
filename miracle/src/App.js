@@ -7,11 +7,15 @@ import Services from "./components/Services";
 import Why from "./components/Why";
 import Form from "./components/Form";
 import Footer from "./components/Footer";
+import {useState} from "react";
 
 function App() {
+    const [activeMenu, setActiveMenu] = useState(false)
+
   return (
     <div className="App">
-        <Header/>
+        <Header  activeMenu={activeMenu}
+                 setActiveMenu={setActiveMenu}/>
         <Main />
         <Services />
         <Why />

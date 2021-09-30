@@ -1,6 +1,6 @@
 export default function Services() {
     return (
-        <div className="services-block">
+        <div className="services-block" id="service">
             <div className="container-wrapper services-wrapper">
                 <div className="title-block">
                     <h2 className="title-simple">Что мы предлагаем?</h2>

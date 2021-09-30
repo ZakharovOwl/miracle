@@ -79,3 +79,10 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+
+@include sm-screen() {
+.footer-wrapper {
+  flex-direction: column;
+}
+}

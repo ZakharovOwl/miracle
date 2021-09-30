@@ -60,6 +60,10 @@
   color: #d5d5d6;
 }
 
+.menu-btn {
+  display: none;
+}
+
 .menu-item {
   cursor: pointer;
   font-family: $font-montserrat;
@@ -68,7 +72,7 @@
   list-style-type: none;
 
   &:hover {
-    color:white;
+    color: white;
   }
 }
 
@@ -102,19 +106,133 @@
   margin-right: 10px;
 }
 
+//mobile-menu
+
+.line1 {
+  //transform: rotate(-45deg) translate(-6px, -6px);
+  position: absolute;
+  //margin-bottom: 0 !important;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+  top: 12px;
+}
+
+.line2 {
+  //transform: rotate(45deg) translate(-6px, 0);
+  transform: rotate(45deg);
+  position: absolute;
+}
+
+.menu-mobile-list {
+  display: none;
+}
+
+.header-block-active {
+  background-color: #070708eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  animation: show-menu 0.5s forwards;
+}
+
+.mobile-list-active {
+  display: flex;
+}
+
+.menu-mobile-wrapper {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 44px;
+  padding: 0 40px;
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-line {
+  width: 17px;
+  height: 1px;
+  background-color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
+.btn-menu-top {
+  margin-bottom: 6px;
+}
+
+//menu-list
+.menu-mobile-list {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  top: 44px;
+  height: 100vh;
+  color: aliceblue;
+  z-index: 1100000;
+  transition: all 0.3s ease;
+}
+
+.menu-mobile-item {
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 38px;
+  margin-bottom: 10vh;
+  font-weight: 400;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: show-menu 0.7s forwards;
+  color: #bbc4cc;
+
+  &:hover {
+    color: #FFFFFF;
+  }
+}
+
 
 //@include xs-screen() {
 //
 //}
 //
-//@include sm-screen() {
-//
-//}
-//
+@include sm-screen() {
+  .menu-wrapper {
+    display: none;
+  }
+
+  .menu-mobile-wrapper {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+}
+
 //@include md-screen() {
 //
 //}
-//
+
 //@include lg-screen() {
 //
 //}
@@ -122,3 +240,13 @@
 //@include xl-screen() {
 //
 //}
+
+
+@keyframes show-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

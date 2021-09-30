@@ -1,22 +1,68 @@
-export default function Header() {
+import {Link} from 'react-scroll'
+
+export default function Header({activeMenu, setActiveMenu}) {
     return (
-        <div className="header-block container-block">
+        <div className={"container-block header-block" + (activeMenu ? '-active' : '')}>
             <div className="header-wrapper">
                 <header className="header">
                     <ul className="menu-wrapper">
-                        <li className="menu-item">
-                            <a href="/" className="logo-wrapper">
-                                <img  className="logo" src="assets/logo-white.svg" alt="tree"/>
+                        <Link to="main" smooth={true} duration={1000} className="menu-logo menu-item">
+                            <div className="logo-wrapper">
+                                <img className="logo" src="assets/logo-white.svg" alt="tree"/>
                                 <h1 className="logo-title"><span className="first">M</span>iracle</h1>
-                            </a>
+                            </div>
+                        </Link>
+                        <Link to="service" smooth={true} duration={1000} className="menu-item">Наши услуги</Link>
+                        <Link to="why" smooth={true} duration={1000} className="menu-item">О нас</Link>
+                        <Link to="form" smooth={true} duration={1000} className="menu-item">Оставить заявку</Link>
+                        <Link to="contact" smooth={true} duration={1000} className="menu-item">Контакты</Link>
+                    </ul>
+
+                    <ul className={"menu-mobile-wrapper"}>
+                        <Link to="main" smooth={true} duration={1000} className="menu-logo menu-item">
+                            <div className="logo-wrapper">
+                                <h1 className="logo-title"><span className="first">M</span>iracle</h1>
+                            </div>
+                        </Link>
+
+                        <Link to="main" smooth={true} duration={1000} className="menu-logo menu-item">
+                            <div className="logo-wrapper">
+                                <img className="logo" src="assets/logo-white.svg" alt="tree"/>
+                            </div>
+                        </Link>
+
+                        <li className={"menu-btn"}
+                            onClick={() => setActiveMenu(!activeMenu)}>
+                            <div className={"menu-line btn-menu-top" + (activeMenu ? ' line1' : '')}>
+                            </div>
+                            <div className={"menu-line btn-menu-bottom" + (activeMenu ? ' line2' : '')}>
+                            </div>
                         </li>
-                        <li className="menu-item">Наши услуги</li>
-                        <li className="menu-item">Как мы работаем</li>
-                        <li className="menu-item">Оставить заявку</li>
-                        <li className="menu-item">Контакты</li>
                     </ul>
                 </header>
             </div>
+            <ul className={"menu-mobile-list" + (activeMenu ? ' mobile-list-active' : '')}>
+                <Link to="service"
+                      smooth={true}
+                      duration={1000}
+                      className="menu-mobile-item"
+                      onClick={() => setActiveMenu(!activeMenu)}>Наши услуги</Link>
+                <Link to="why"
+                      smooth={true}
+                      duration={1000}
+                      className="menu-mobile-item"
+                      onClick={() => setActiveMenu(!activeMenu)}>О нас</Link>
+                <Link to="form"
+                      smooth={true}
+                      duration={1000}
+                      className="menu-mobile-item"
+                      onClick={() => setActiveMenu(!activeMenu)}>Оставить заявку</Link>
+                <Link to="contact"
+                      smooth={true}
+                      duration={1000}
+                      className="menu-mobile-item"
+                      onClick={() => setActiveMenu(!activeMenu)}>Контакты</Link>
+            </ul>
         </div>
     )
 }

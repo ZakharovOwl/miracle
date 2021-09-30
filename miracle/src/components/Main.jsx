@@ -1,6 +1,8 @@
+import {Link} from 'react-scroll'
+
 export default function Main() {
     return (
-        <div className="main-block container-block">
+        <div className="main-block container-block" id="main">
             <div className="container-wrapper">
                 <div className="main-content">
                     <div className="main-content-left">
@@ -12,7 +14,7 @@ export default function Main() {
                     </div>
                     <div className="main-content-right">
                         <h2 className="select-title">Создадим сайт для <span className="your">твоих</span> идей</h2>
-                        <button className="main-btn">Оставить заявку</button>
+                        <Link to="form" smooth={true} duration={1000} className="main-btn">Оставить заявку</Link>
                     </div>
                 </div>
             </div>

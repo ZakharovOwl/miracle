@@ -130,7 +130,7 @@ const Form = () => {
     }
 
     return (
-        <div className="form-block-wrapper" id="contact">
+        <div className="form-block-wrapper" id="form">
             <div className="container-wrapper form-wrapper">
                 <div className="form-title">
                     <h3>Хотите узнать стоимость</h3>
@@ -140,8 +140,6 @@ const Form = () => {
                 <div className="form-content-wrapper">
                     <form  className="form" onSubmit={sendEmail}>
                         <div className="form-title">
-                            {/*<h3>Хотите узнать стоимость</h3>*/}
-                            {/*<h3>разработки сайта?</h3>*/}
                             <h2>Напишите нам</h2>
                         </div>
 
