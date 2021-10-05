@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const Form = () => {
     useEffect(()=>{
-        AOS.init({duration:2000,
+        AOS.init({duration:1500,
             easing: "ease-in-out"})
     },[])
     //state form
@@ -88,7 +88,7 @@ const Form = () => {
             setSubmitButton('Заявка отправлена');
             setSubmitted(true);
 
-            emailjs.sendForm('service_gaumx9q', 'template_m4f76d3', e.target, "user_EOi7tPCtsvH4WVgVXSHt5")
+            emailjs.sendForm('service_hxtt2ep', 'template_1rqfxht', e.target, "user_kUOblS1cYE2dBlGtRPkLq")
                 .then((result) => {
                     console.log("submitted result", result.text);
                     resetForm();
@@ -132,13 +132,13 @@ const Form = () => {
     return (
         <div className="form-block-wrapper" id="form">
             <div className="container-wrapper form-wrapper">
-                <div className="form-title">
+                <div data-aos="fade-in" className="form-title">
                     <h3>Хотите узнать стоимость</h3>
                     <h3>разработки сайта?</h3>
                     {/*<h2>Напишите нам</h2>*/}
                 </div>
                 <div className="form-content-wrapper">
-                    <form  className="form" onSubmit={sendEmail}>
+                    <form  data-aos="fade-up" className="form" onSubmit={sendEmail}>
                         <div className="form-title">
                             <h2>Напишите нам</h2>
                         </div>

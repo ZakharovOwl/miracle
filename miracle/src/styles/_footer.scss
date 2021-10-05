@@ -81,8 +81,51 @@
 }
 
 
-@include sm-screen() {
-.footer-wrapper {
-  flex-direction: column;
+
+
+
+@include lg-screen() {
+
 }
+
+@include md-screen() {
+  .footer-logo-text {
+    margin-bottom: 48px;
+  }
+
+  .footer-block {
+    padding: 48px 0;
+  }
+}
+
+@include sm-screen() {
+  .footer {
+    flex-direction: column-reverse;
+  }
+
+  .footer-content {
+    border: none;
+    padding: 0;
+    align-items: center;
+  }
+
+  .footer-logo {
+    padding: 0;
+    margin-top: 24px;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 24px;
+  }
+
+  .footer-block {
+    padding: 24px 0;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+  }
+}
+
+@include xs-screen() {
 }

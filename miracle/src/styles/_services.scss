@@ -22,9 +22,11 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 42px;
+  width: 50%;
 
   font-family: $font-montserrat;
   font-weight: 400;
+  text-align: center;
 }
 
 .title-simple {
@@ -52,7 +54,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  height: 45vh;
   background-color: $grey1;
   padding: 42px;
   overflow: hidden;
@@ -64,6 +66,8 @@
   align-items: center;
   justify-content: center;
   font-family: $font-montserrat;
+  text-align: center;
+  z-index: 10;
 }
 
 .title-card {
@@ -120,3 +124,53 @@
 //  justify-content: space-between;
 //  padding: 0;
 //}
+
+@include lg-screen() {
+
+}
+
+@include md-screen() {
+  .services-block {
+    padding-top: 48px;
+  }
+
+  .services-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wave-img {
+    bottom: -20vw;
+  }
+}
+
+@include sm-screen() {
+
+  .services-card {
+    padding: 16px;
+  }
+
+
+  .title-card {
+    margin-bottom: 8px;
+  }
+
+  .content-card {
+    font-size: 18px;
+  }
+
+  .services-block {
+    padding-top: 24px;
+  }
+
+  .title-simple {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .title-secondary-simple {
+    font-size: 22px;
+  }
+}
+
+@include xs-screen() {
+}

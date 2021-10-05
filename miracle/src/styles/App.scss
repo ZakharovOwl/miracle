@@ -38,27 +38,47 @@ a, a:focus, a:active {
   color: inherit;
 }
 
-@include xs-screen() {
-  $container-padding-size:0 20px;
-  $container-max-width-size: 544px;
-}
-
-@include sm-screen() {
-  container-padding-size:0 40px;
-  $container-max-width-size: 768px;
-}
-
-@include md-screen() {
-  $container-padding-size:0 64px;
-  $container-max-width-size: 992px;
+@include xl-screen() {
+  .container-wrapper{
+    $container-padding-size:0 80px;
+    $container-max-width-size: 1920px;
+    padding: $container-padding-size;
+  }
 }
 
 @include lg-screen() {
-  $container-padding-size:0 72px;
-  $container-max-width-size: 1280px;
+  .container-wrapper{
+    $container-padding-size:0 72px;
+    $container-max-width-size: 1280px;
+    padding: $container-padding-size;
+  }
 }
 
-@include xl-screen() {
-  $container-padding-size:0 80px;
-  $container-max-width-size: 1920px;
+@include md-screen() {
+  .container-wrapper{
+    $container-padding-size:0 64px;
+    $container-max-width-size: 1280px;
+    padding: $container-padding-size;
+  }
 }
+
+@include sm-screen() {
+  .container-wrapper{
+    $container-padding-size:0 40px;
+    $container-max-width-size: 768px;
+    padding: $container-padding-size;
+  }
+}
+
+@include xs-screen() {
+  .container-wrapper{
+    $container-padding-size:0 20px;
+    $container-max-width-size: 544px;
+    padding: $container-padding-size;
+  }
+}
+
+
+
+
+

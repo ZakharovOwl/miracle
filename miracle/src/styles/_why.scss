@@ -150,3 +150,58 @@
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
 }
+
+
+@include lg-screen() {
+
+}
+
+@include md-screen() {
+  .why-block {
+    padding: 48px 0;
+  }
+
+  .why-wrapper {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .why-content {
+    width: 100%;
+  }
+
+  .title-block {
+    width: 100%;
+  }
+
+  .title-simple {
+    font-size: 30px;
+  }
+
+  .select {
+    font-size: 38px;
+  }
+
+  .title-secondary-simple {
+    font-size: 20px;
+  }
+}
+
+@include sm-screen() {
+  .why-block {
+    padding: 24px 0;
+  }
+
+  .title-simple {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .title-secondary-simple {
+    font-size: 22px;
+  }
+}
+
+@include xs-screen() {
+}

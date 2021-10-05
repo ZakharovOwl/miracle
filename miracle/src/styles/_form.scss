@@ -226,19 +226,20 @@ background-size: cover;
   width: 214px;
 
   &:hover {
-    background-color: #F5F6F8;
+    background-color: #00061cc2;
+    color: #FFFFFF;
   }
 
   &:active {
-    background-color: #E3E5EC;
-    border: 2px solid #E3E5EC;
+    background: #f3e00099;
+    border: 1px solid #E3E5EC;
   }
 }
 
 .btn-submitted {
-  background: #36A9B7;
-  border: 2px solid #36A9B7;
-  color: #FFFFFF;
+  background: #00ff5d96;
+  border: 1px solid #E3E5EC;
+  color: #000000;
   //box-sizing: border-box;
   //border-radius: 4px;
   //font-weight: bold;
@@ -248,7 +249,8 @@ background-size: cover;
   //cursor: pointer;
 
   &:hover {
-    color: #282A32;
+    background: #00ff5d96;
+    color: #3a3c48;
   }
 }
 
@@ -261,4 +263,45 @@ background-size: cover;
   width: 50%;
   height: 638px;
   margin-left: 5vw;
+}
+
+
+@include lg-screen() {
+
+}
+
+@include md-screen() {
+  .form-block-wrapper {
+    padding: 48px 0;
+  }
+
+  .form-wrapper {
+    flex-direction: column;
+  }
+
+  .form-title {
+    width: 100%;
+    margin-bottom: 24px;
+
+    h3 {
+      font-size: 30px;
+    }
+  }
+
+  .form-content-wrapper {
+    width: 100%;
+  }
+
+  .form-block-wrapper {
+    background-image: linear-gradient(30deg, #00000000 15.31%, #181c33cc 52.37%), url("assets/service/designe-full.jpg");
+  }
+  }
+
+@include sm-screen() {
+  .form-block-wrapper {
+    padding: 24px 0;
+  }
+}
+
+@include xs-screen() {
 }
