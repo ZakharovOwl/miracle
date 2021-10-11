@@ -2,9 +2,9 @@ import {Link} from 'react-scroll'
 
 export default function Header({activeMenu, setActiveMenu}) {
     return (
-        <div className={"container-block header-block" + (activeMenu ? '-active' : '')}>
+        <nav className={"container-block header-block" + (activeMenu ? '-active' : '')}>
             <div className="header-wrapper">
-                <header className="header">
+                <div className="header">
                     <ul className="menu-wrapper">
                         <Link to="main" smooth={true} duration={1000} className="menu-logo menu-item">
                             <div className="logo-wrapper">
@@ -39,7 +39,7 @@ export default function Header({activeMenu, setActiveMenu}) {
                             </div>
                         </li>
                     </ul>
-                </header>
+                </div>
             </div>
             <ul className={"menu-mobile-list" + (activeMenu ? ' mobile-list-active' : '')}>
                 <Link to="service"
@@ -63,6 +63,6 @@ export default function Header({activeMenu, setActiveMenu}) {
                       className="menu-mobile-item"
                       onClick={() => setActiveMenu(!activeMenu)}>Контакты</Link>
             </ul>
-        </div>
+        </nav>
     )
 }

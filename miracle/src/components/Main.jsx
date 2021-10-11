@@ -13,7 +13,7 @@ export default function Main() {
     }, [])
 
     return (
-        <div className="main-block container-block" id="main">
+        <main className="main-block container-block" id="main">
             <div className="container-wrapper">
                 <div className="main-content">
                     <div className="main-content-left">
@@ -28,6 +28,6 @@ export default function Main() {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
